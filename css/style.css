@@ -1,3 +1,16 @@
 body {
     text-align: center;
 }
+/* Media Queries for mobile view */
+@media only screen and (max-width:480px) {
+canvas {
+  width: 80%;
+}
+}
+
+/* Media Queries for ipad view */
+@media only screen and (min-width:481px) and (max-width:780px) {
+canvas {
+  width: 90%;
+}
+}
