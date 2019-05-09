@@ -1,3 +1,4 @@
+"use strict";
 var Enemy = function(x, y, speed) {
   this.x = x;
   this.y = y;
@@ -60,11 +61,11 @@ Player.prototype.render = function() {
 var allEnemies = [];
 var forEnemy = [60, 145, 230];
 var player = new Player(200, 410);
-for (i in forEnemy) {
+for (var i in forEnemy) {
   var obj = new Enemy(0, forEnemy[i], 150);
   allEnemies.push(obj);
 }
-player.handleInput = function(key) {
+Player.prototype.handleInput = function(key) {
   if (key == "left" && this.x > 0)
     this.x -= 101;
   if (key == "right" && this.x < 303)
@@ -80,7 +81,6 @@ player.handleInput = function(key) {
     }, 1000);
   }
 }
-
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
