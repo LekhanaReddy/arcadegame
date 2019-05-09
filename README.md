@@ -4,7 +4,7 @@
 
 -   [Instructions](#instructions)
 -   [Information](<#project details>)
--   [What I have done](#I done)
+-   [What I have done](<#I done>)
 -   [Game Playing](<#how to play>)
 
 ## Instructions
